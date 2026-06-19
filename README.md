@@ -1,25 +1,24 @@
-#eCommerce Data Ananlysis
+# Cafe Sales Analysis
 
+## Project Overview
+Cleaned and analyzed 10,000 row cafe sales dataset using Python/Pandas.
 
-##Tools I'ven used
-Python, Pandas, Numpy, And Plotly
+## Dataset
+- **Source:** Kaggle (dirty_cafe_sales.csv)
+- **Rows:** 10,000 (raw) → 9,067 (cleaned)
+- **Columns:** 8
 
+## Problems Fixed
+- 3,595 invalid Location values replaced with mode
+- Mixed date formats standardized to YYYY-MM-DD
+- Missing numeric values dropped
+- Whitespace stripped from all columns
 
-##Part 1 --Data Cleaning
--Removed duplicates
--Fixed inconsistent characters and values
--Handled missing values
--Fixed mixed data formats
--Removed outliers
+## Visualizations (Plotly Express)
+- Item wise Total Revenue
+- Payment Method Distribution
+- Location wise Total Sales
+- Monthly Revenue Trend (2023)
 
-
-##Part 2 --Visualization
--Total revenue by Product_Category
--Simple and cleaned chart using only Plotly
-
-
-##All files below
--ecom_ind.py -------Cleaning script
--final_result.csv --Cleaned dataset
--viz_data.py ---- --Visualization script
--check.py ----------Simple script for inspecting(EDA)
+## Tools Used
+- Python, Pandas, NumPy, Plotly Express
